@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_css.css">
+    <title></title>
+    <script src="form.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+   <script>
+    //   <script type="text/javascript">      
+  
+    $(document).ready(function()
+    {
+        // Countries
+        var country_arr = new Array("Select Country","AUSTRALIA","INDIA","NEW ZEALAND","USA","UAE","MAURITIUS");
+
+        $.each(country_arr, function (i, item)
+         {
+            $('#country').append($('<option>', 
+              {
+                value: i,
+                text : item,
+            }, '</option>' ));
+        });
+      })
+
+      function reset(){
+        document.getElementById("client").reset();
+
+      }
+      function submit(){
+         prompt("first name: "+fname,
+                "\nlast name: "+lname,
+                "date of birth: "+date,
+                "country: "+country,
+                "gender: "+a1,
+                "profession: "+prof,
+                "Email: "+mail,
+                "Mobile no.: "+no
+        );
+        console.log("prompt");
+      }
+      document.getElementById("submit").addEventListener("click",function()
+    {
+        document.querySelector(".popup").computedStyleMap.display ="flex"
+    }
+    )
+        
+   
+    </script>
+    
+</head>
+
+<body>
+  
+
+  
+  <table id ="form1" >
+    <form action="">
+      <div class="header">
+      <h1>Customer Survey Form</h1> 
+    </div>
+      <div class="outer">
+        <label for="fname">First Name:</label>&emsp; &emsp; &emsp; &emsp;
+        <label for="lname">Last Name:</label><br><br> 
+         <input type="text" id="fname" name="fname" size="15px"  required>&emsp; 
+        <input type="text" id="lname" name="lname" size="15px"required ><br><br>
+        <label for="date">Date of Birth</label>&emsp;&emsp;&emsp;&emsp;
+        <!-- <br><br> -->
+        <label for="country">Country</label><br><br>
+        <input type="date" id="date" name="date" required>&emsp; &emsp; 
+        <!-- <br><br> -->
+       
+        <select name="country" id="country" required></select> <br><br>
+        <label for="Gender" required>Gender</label><br><br>
+        <input type="radio" id="a1" name="a1" required> <label for="Male">Male</label>
+        <input type="radio" id="a1" name="a1" required><label for="Female">Female</label><br><br>
+        <input type="radio" id="a1" name="a1" required><label for="Others">Others</label><br><br>
+
+        <label for="prof">Profession</label><br><br>
+        <input type="text" id="prof" name="prof" size="15px" required><br><br>
+        <label for="mail">Email</label><br><br>
+        <input type="text" id="mail" name="mail" required><br><br>
+            
+         <label for="number">Mobile No.</label><br><br>
+         <input type="number"pattern="[789][0-9]{9}"id="no" name="no" required><br><br>
+        <input type="reset" value="RESET" onclick="reset()" class="reset">&emsp; &emsp;
+        <input type="submit" value="SUBMIT" class="submit" onclick="submit()"> 
+           
+    </form>
+    </table>
+  </div>
+</body>
+</html>

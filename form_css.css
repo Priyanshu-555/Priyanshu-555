@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(9, 153, 215);
+    color: #0e0d0d;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  table{ 
+  
+    background-color: rgb(111, 142, 169);
+    color: rgb(156, 191, 220);
+      margin: 0;
+      padding: 0;
+   
+     
+    } 
+    input{
+      background-color: rgb(250, 252, 252);
+    }
+    
+    .reset{
+      background-color:rgb(9, 153, 215);
+      padding: 10px 10px; 
+      height: 100%;
+      outline: none;
+      border: none;
+      color: white;   
+    }
+    .submit{
+      background-color: rgb(9, 153, 215);
+      padding: 10px 10px; 
+      height: 100%;
+      border: none;
+      margin:10px; 
+      color: white;    
+    }
+    .outer{
+      margin: 30% ;
+      padding:  30px;
+      align-content: center;
+      background-color: rgb(245, 245, 247);
+    }
+    .header{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      margin-left: -15%;
+      color: rgb(247, 248, 249);
+      
+    }
+   /* .popup{
+    background: #0e0d0d;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; *//*
+    text-align: center;
+
+   }
+   .popup-content{
+    height: 100%;
+    width: 100%;
+    background: #e9e8e8;
+    padding: 20px;
+    position: relative;
+   } */
