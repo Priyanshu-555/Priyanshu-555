@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Priyanshu-555
 - 🌱 I’m currently learning ...
-- 💞️ I’m looking placement for java developer
+- 💞️ I’m looking placement for salseforce developer
 - 📫 reach me https://www.linkedin.com/in/priyanshu-srivastava-68ba9b209
 
 <!---
